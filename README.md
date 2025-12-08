@@ -51,21 +51,19 @@ Follow these steps to set up and run the project locally.
 
 ### 1. Clone the repository
 
-
 1. git clone <your-repo-url>
-
 2. cd vehicle-rental
+3. Install dependenciesBash
 
-3. Install dependenciesBash 
 ```
 npm install
 ```
 
-4. Create a file named .env in the root folder and add your configuration details:Code snippet 
+4. Create a file named .env in the root folder and add your configuration details:Code snippet
 
--`PORT=5000`
--`CONNECTION_SRT=postgresql://your connection credentials`
--`JWT_SECRET=your_jwt_secret`
+- `PORT=5000`
+- `CONNECTION_SRT=postgresql://your connection credentials`
+- `JWT_SECRET=your_jwt_secret`
 
 5. Run the project
 
@@ -73,18 +71,20 @@ npm install
 npm run dev
 ```
 
-### The server will start on: http://localhost:5000
+## The server will start on: http://localhost:5000
 
 ### Authentication User Endpoints
 
--`Register: POST  /api/v1/auth/signup`
--`Login: POST /api/v1/auth/signin`
--`Protected Routes For all protected endpoints, an authorization header is required: Authorization: Bearer <your_token>`
+- `Register: POST  /api/v1/auth/signup`
+- `Login: POST /api/v1/auth/signin`
+- `Protected Routes For all protected endpoints, an authorization header is required: Authorization: Bearer <your_token>`
 
-### How to Use 
+### How to Use
 
--`Register a user`
--`Login to receive a JWT token.`
--`Use the token in the Authorization header to access protected routes`. 
--`Admin users can manage vehicles and all users.`
--`Customer users can create and manage their own bookings.`
+- `Register a user`
+- `Login to receive a JWT token.`
+- `Use the token in the Authorization header to access protected routes`.
+- `Admin users can manage vehicles and all users.`
+- `Customer users can create and manage their own bookings.`
+
+---
